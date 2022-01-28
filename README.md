@@ -6,7 +6,7 @@ maidou-admin
 * `maidou-admin` 的前端页面及菜单api接口
 * 框架为 `vue2` 和 `element-ui`
 * 有账号管理，权限管理，角色管理
-* 本项目为前端服务，后台api服务点击可查看 [`maidou-admin`](https://gitee.com/doudou-y/maidou-admin-ui) 前端项目
+* 本项目为前端服务，后台api服务点击可查看 [`maidou-admin`](https://gitee.com/doudou-y/maidou-admin-api) 后端项目
 
 ## 环境要求
 * nodejs v14.15.4
