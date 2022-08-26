@@ -56,18 +56,18 @@
         </el-table-column>
 
         <el-table-column align="center" :label="'操作'" width="350">
-          <template slot-scope="scope">
+          <template v-slot="scope">
             <el-button :disabled="!checkPermission(['maidou.admin.update'])" type="primary" size="mini" icon="el-icon-edit" @click="handleEdit(scope.$index, scope.row)">
-              {{ '编辑' }}
+              编辑
             </el-button>
             <el-button :disabled="!checkPermission(['maidou.admin.detail'])" type="info" size="mini" icon="el-icon-info" @click="handleDetail(scope.$index, scope.row)">
-              {{ '详情' }}
+              详情
             </el-button>
             <el-button :disabled="!checkPermission(['maidou.admin.modifyPassword'])" type="warning" size="mini" @click="handlePassword(scope.$index, scope.row)">
-              {{ '改密' }}
+              改密
             </el-button>
             <el-button v-permission="['maidou.admin.delete']" type="danger" size="mini" icon="el-icon-delete" @click="handleDelete(scope.$index, scope.row)">
-              {{ '删除' }}
+              删除
             </el-button>
           </template>
         </el-table-column>

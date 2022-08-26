@@ -58,7 +58,7 @@ export default {
       this.$store.dispatch('app/toggleSideBar')
     },
     async logout() {
-      await this.$store.dispatch('user/logout',)
+      await this.$store.dispatch('user/logout')
       this.$router.push(`/login?redirect=${this.$route.fullPath}`)
     }
   }
@@ -121,9 +121,14 @@ export default {
       margin-right: 30px;
 
       .avatar-wrapper {
-        margin-top: 5px;
+        //margin-top: 5px;
         position: relative;
-
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
         .user-avatar {
           cursor: pointer;
           width: 40px;
@@ -133,10 +138,8 @@ export default {
 
         .el-icon-caret-bottom {
           cursor: pointer;
-          position: absolute;
-          right: -20px;
-          top: 25px;
           font-size: 12px;
+          margin-left: 0.5rem;
         }
       }
     }

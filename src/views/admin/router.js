@@ -12,7 +12,7 @@ export default {
         title: '账号管理',
         icon: 'el-icon-user-solid',
         roles: [
-          'maidou.group.index'
+          'maidou.admin.index'
         ]
       }
     }

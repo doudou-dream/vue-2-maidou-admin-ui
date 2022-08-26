@@ -74,9 +74,9 @@ const actions = {
   },
 
   // user logout
-  logout({ commit, id }) {
+  logout({ commit }) {
     return new Promise((resolve, reject) => {
-      logout(id).then(() => {
+      logout().then(() => {
         removeToken() // must remove  token  first
         resetRouter()
         commit('RESET_STATE')
