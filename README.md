@@ -18,6 +18,7 @@ maidou-admin
 ```bash
 # 克隆项目
 git clone https://gitee.com/doudou-y/maidou-admin-ui.git
+git clone https://github.com/doudou-dream/vue-2-maidou-admin-ui.git
 
 # 进入项目目录
 cd maidou-admin
